@@ -6,6 +6,6 @@ Yes, the contest is over,duh! But who cares?
 
 Everyone loves a good puzzle and if you have starting problems with learning Rust ( like me ) or any other language ftm, such puzzles are a gift!
 
-Since these are written during the Rust learning, I make no claims that they are canonical Rust programs.
+Since these are written during the Rust learning, I make no claims that they are idiomatic Rust programs.
 
 Enjoy.

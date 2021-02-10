@@ -29,6 +29,7 @@ pub mod jsonconv {
             		 }
             		else
             		{
+            			passport.push_str(" ");
             			passport.push_str(&ip);
             		}
                 println!("Current line {} passport {}", ip,passport);
@@ -37,6 +38,9 @@ pub mod jsonconv {
 					}
 			}	
 	
+		//last passport
+		let str = get_as_json(&passport);
+    outfile.write_all(str.as_bytes()).expect("Unable to write data");
 	
 	 }
 	
@@ -85,6 +89,7 @@ pub mod jsonconv {
 		}
 	}
 	return_str.push_str("}");
+	return_str.push_str("\n");
 	return_str
 	}
 

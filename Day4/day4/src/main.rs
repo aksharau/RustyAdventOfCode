@@ -44,7 +44,8 @@ fn is_valid_passport(s: std::result::Result<String,std::io::Error>) -> u32 {
 	let p: Result<Passport> =  serde_json::from_str(s.unwrap().as_str());
 	
 	let mut p = match p
-	{	Ok(_) => ans = 1,
+	{	
+	  Ok(_) => ans = 1,
 	  Err(e) => ans = 0,
 	};
 	
